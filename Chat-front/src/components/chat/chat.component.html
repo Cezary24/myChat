@@ -1,0 +1,26 @@
+<mat-card class="chat">
+  <mat-card-content class="chat-messages">
+    <div class="messages">
+      <div *ngFor="let message of mockapMessages">
+        <mat-card-header>
+          <mat-card-title>{{ message.userNickName }}</mat-card-title>
+        </mat-card-header>
+
+        <mat-card *ngIf="message.userId == isCurrentUser" class="current-user">
+          <mat-card-content
+            > {{ message.message }}</mat-card-content
+          >
+        </mat-card>
+        <mat-card *ngIf="message.userId != isCurrentUser" class="not-current-user">
+          <mat-card-content
+            > {{ message.message }}</mat-card-content
+          >
+        </mat-card>
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-form-field class="example-full-width">
+    <mat-label>Write Something</mat-label>
+    <input (keydown.enter)="onEnter()" matInput [formControl]="userInputMessage">
+  </mat-form-field>
+</mat-card>

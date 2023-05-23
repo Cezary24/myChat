@@ -1,0 +1,24 @@
+.chat{
+    display: flex;
+}
+
+.chat-messages{
+    margin: 10px;
+}
+
+.messages{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ 
+}
+
+.current-user{
+    display: flex;
+    align-items: flex-end;
+}
+
+.not-current-user{
+    display: flex;
+    align-items: flex-start;
+}
