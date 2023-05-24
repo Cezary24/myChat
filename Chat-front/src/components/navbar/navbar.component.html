@@ -1,4 +1,53 @@
-<mat-drawer-container class="example-container">
-  <mat-drawer mode="side" opened>Chat to My</mat-drawer>
-  <mat-drawer-content><app-chat></app-chat></mat-drawer-content>
-</mat-drawer-container>
+<mat-sidenav-container class="sidenav-all">
+  <mat-sidenav #sidenav mode="side" [(opened)]="isOpened" class="sidenav">
+
+    <div class="user">
+
+      <mat-icon class="icon-size">account_circle</mat-icon>
+
+
+    </div>
+
+    <div class="chats-list">
+
+      <mat-icon class="icon-size">theaters</mat-icon>
+      <mat-icon class="icon-size">theaters</mat-icon>
+      <mat-icon class="icon-size">theaters</mat-icon>
+      <mat-icon class="icon-size">theaters</mat-icon>
+      <mat-icon class="icon-size">theaters</mat-icon>
+      <mat-icon class="icon-size">theaters</mat-icon>
+
+
+      <mat-icon class="icon-size">add_circle_outline</mat-icon>
+    </div>
+  </mat-sidenav>
+
+
+  <router-outlet></router-outlet>
+</mat-sidenav-container>
+
+<!-- <mat-sidenav-content class="side-content">
+  <mat-toolbar class="toolbar">
+
+    <div class="menu-and-app-title">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+        (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>My Chat</span>
+    </div>
+    <span class="spacer"></span>
+
+
+    <div class="favorite-share-buttons">
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>
+
+ 
+</mat-sidenav-content> -->

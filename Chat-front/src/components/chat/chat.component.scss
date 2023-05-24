@@ -1,24 +1,28 @@
-.chat{
-    display: flex;
+.chat {
+  display: flex;
+  background-color: #acb1d6;
 }
 
-.chat-messages{
-    margin: 10px;
+.chat-messages {
+  margin: 10px;
 }
 
-.messages{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
- 
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.current-user{
-    display: flex;
-    align-items: flex-end;
+.current-user {
+  display: flex;
+  align-items: flex-end;
 }
 
-.not-current-user{
-    display: flex;
-    align-items: flex-start;
+.not-current-user {
+  display: flex;
+  align-items: flex-start;
+}
+
+.chat-input {
+  margin: 16px;
 }

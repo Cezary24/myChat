@@ -1,5 +1,59 @@
-.example-container {
-    width: 100%;
-    height: 100%;
-    border: 1px solid #555;
+.sidenav-all {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+
+  background-color: #fff8d6;
 }
+//sidenav START
+.sidenav {
+  background-color: #7eaf66;
+}
+
+.side-content {
+  width: 90%;
+  float: right;
+}
+
+.icon-size {
+  font-size: 50px;
+  height: 50px;
+  width: 50px;
+}
+.chats-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.user {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+//sidenav STOP
+
+//toolbar START
+.toolbar {
+  background-color: #a4d0a4;
+}
+.menu-and-app-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.favorite-share-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+//toolbar STOP
